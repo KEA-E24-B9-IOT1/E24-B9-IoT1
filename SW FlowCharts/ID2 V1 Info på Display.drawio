@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.9.3">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="487" dy="718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="b5z2Wnowq-uhxzEn1UQt-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-0" target="b5z2Wnowq-uhxzEn1UQt-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b5z2Wnowq-uhxzEn1UQt-0" value="ID:2 Start&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="335" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b5z2Wnowq-uhxzEn1UQt-2" value="Hent batteri-%" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="290" y="240" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-44" target="4MpdFvmbFCzReFdFvpwz-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b5z2Wnowq-uhxzEn1UQt-44" value="Opdater Thingsboard med alt data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="332.5" y="635.5" width="125" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="b5z2Wnowq-uhxzEn1UQt-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.4;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-9" target="b5z2Wnowq-uhxzEn1UQt-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="270" />
+            </Array>
+            <mxPoint x="190" y="580.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-58" target="4MpdFvmbFCzReFdFvpwz-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b5z2Wnowq-uhxzEn1UQt-58" value="&lt;div&gt;LMT84LPM:&lt;/div&gt;&lt;div&gt;Mål temperatur&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="290" y="440" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-0" target="b5z2Wnowq-uhxzEn1UQt-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-0" value="ID 1" style="shape=offPageConnector;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-3" target="b5z2Wnowq-uhxzEn1UQt-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-3" value="Hent GPS informationer:&lt;br&gt;(Længdegrad, breddegrad, retning)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="290" y="340" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-6" target="b5z2Wnowq-uhxzEn1UQt-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-6" target="4MpdFvmbFCzReFdFvpwz-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-6" value="GY-512:&lt;br&gt;Mål hastighed" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="290" y="540" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-9" value="Vent 30 sekunder" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="668" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-13" target="4MpdFvmbFCzReFdFvpwz-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-13" value="&lt;div&gt;Opdater Display&lt;/div&gt;&lt;div&gt;med de indhentede data&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="540" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-2" target="4MpdFvmbFCzReFdFvpwz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-16" target="b5z2Wnowq-uhxzEn1UQt-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="283" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-16" value="Vent 1 sekund" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="550" y="440" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
