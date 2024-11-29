@@ -13,30 +13,28 @@
         <mxCell id="b5z2Wnowq-uhxzEn1UQt-2" value="Hent batteri-%" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="290" y="240" width="210" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="b5z2Wnowq-uhxzEn1UQt-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-44" target="b5z2Wnowq-uhxzEn1UQt-45" edge="1">
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-44" target="4MpdFvmbFCzReFdFvpwz-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="b5z2Wnowq-uhxzEn1UQt-44" value="Opdater Thingsboard med alt data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="332.5" y="545.5" width="125" height="125" as="geometry" />
+          <mxGeometry x="332.5" y="635.5" width="125" height="125" as="geometry" />
         </mxCell>
-        <mxCell id="b5z2Wnowq-uhxzEn1UQt-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-45" target="b5z2Wnowq-uhxzEn1UQt-2" edge="1">
+        <mxCell id="b5z2Wnowq-uhxzEn1UQt-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.4;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-9" target="b5z2Wnowq-uhxzEn1UQt-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="190" y="270" />
+              <mxPoint x="210" y="270" />
             </Array>
+            <mxPoint x="190" y="580.5" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="b5z2Wnowq-uhxzEn1UQt-45" value="Vent lidt tid" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="150" y="580.5" width="80" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="b5z2Wnowq-uhxzEn1UQt-55" value="Kontakt og beregn GPS Placering, Retning og hastighed" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="120" y="730" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="b5z2Wnowq-uhxzEn1UQt-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-58" target="b5z2Wnowq-uhxzEn1UQt-44" edge="1">
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-58" target="4MpdFvmbFCzReFdFvpwz-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="b5z2Wnowq-uhxzEn1UQt-58" value="Fortag temparturmåling" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="b5z2Wnowq-uhxzEn1UQt-58" value="&lt;div&gt;LMT84LPM:&lt;/div&gt;&lt;div&gt;Mål temperatur&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="290" y="440" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-0" target="b5z2Wnowq-uhxzEn1UQt-2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4MpdFvmbFCzReFdFvpwz-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-0" target="b5z2Wnowq-uhxzEn1UQt-2">
           <mxGeometry relative="1" as="geometry">
@@ -48,8 +46,36 @@
         <mxCell id="4MpdFvmbFCzReFdFvpwz-0" value="ID 1" style="shape=offPageConnector;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="500" y="160" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="4MpdFvmbFCzReFdFvpwz-3" value="Hent GPS informationer:&lt;br&gt;(Længdegrad, breddegrad, hastighed" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="332.5" y="340" width="120" height="60" as="geometry" />
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-3" target="b5z2Wnowq-uhxzEn1UQt-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-3" value="Hent GPS informationer:&lt;br&gt;(Længdegrad, breddegrad, retning)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="290" y="340" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-6" target="b5z2Wnowq-uhxzEn1UQt-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-6" target="4MpdFvmbFCzReFdFvpwz-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-6" value="GY-512:&lt;br&gt;Mål hastighed" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="290" y="540" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-9" value="Vent 30 sekunder" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="668" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4MpdFvmbFCzReFdFvpwz-13" target="b5z2Wnowq-uhxzEn1UQt-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="283" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-13" value="&lt;div&gt;Opdater Display&lt;/div&gt;&lt;div&gt;med de indhentede data&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="540" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MpdFvmbFCzReFdFvpwz-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-2" target="4MpdFvmbFCzReFdFvpwz-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
