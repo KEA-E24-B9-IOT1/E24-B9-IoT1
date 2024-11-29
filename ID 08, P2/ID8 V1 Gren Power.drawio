@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.9.3">
   <diagram name="Side-1" id="MIh432SVvvTU2UH0zctk">
-    <mxGraphModel dx="584" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="584" dy="2030" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -53,6 +53,77 @@
         </mxCell>
         <mxCell id="qWMFO-Yb1zcle8_sYHGA-11" value="Vent en sjat tid" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-5" target="JBFvpoAypBMXisZYCuYG-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-2" value="Ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="JBFvpoAypBMXisZYCuYG-1">
+          <mxGeometry x="-0.3143" y="2" relative="1" as="geometry">
+            <mxPoint x="-6" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-5" target="JBFvpoAypBMXisZYCuYG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-4" value="Nej" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="JBFvpoAypBMXisZYCuYG-3">
+          <mxGeometry x="-0.6" y="2" relative="1" as="geometry">
+            <mxPoint x="26" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-5" value="Grøn strøm: &lt;br&gt;&lt;div&gt;CO2-belastning under&amp;nbsp;&lt;/div&gt;&lt;div&gt;50g/kwh?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1225" y="200" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-7" target="JBFvpoAypBMXisZYCuYG-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-7" value="ID 8 Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="-10" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.02;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-9" target="JBFvpoAypBMXisZYCuYG-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-9" value="Tænder for relæ" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.81;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-11" target="JBFvpoAypBMXisZYCuYG-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="390" as="sourcePoint" />
+            <mxPoint x="1370" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-11" value="Lukker for relæ" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-15" target="JBFvpoAypBMXisZYCuYG-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-15" value="&lt;div&gt;Hent data fra API&lt;/div&gt;&lt;div&gt;ang. CO2-belastning&lt;/div&gt;&lt;div&gt;af strømproduktion&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1225" y="90" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-18" target="JBFvpoAypBMXisZYCuYG-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="470" />
+              <mxPoint x="1580" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-18" value="&lt;div&gt;Vent 30 minutter&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="440" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-21" target="JBFvpoAypBMXisZYCuYG-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-21" value="&lt;div&gt;Tænd for indikator&lt;/div&gt;&lt;div&gt;for at der er grøn energi&lt;br&gt;&lt;/div&gt;&lt;div&gt;(LED?)&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="300" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JBFvpoAypBMXisZYCuYG-22" target="JBFvpoAypBMXisZYCuYG-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JBFvpoAypBMXisZYCuYG-22" value="&lt;div&gt;Sluk for indikator&lt;/div&gt;&lt;div&gt;for at der er grøn energi&lt;br&gt;(LED?)&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="300" width="180" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
