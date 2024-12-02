@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.1">
   <diagram name="Page-1" id="Au_jINocBcU9wG9LVLza">
-    <mxGraphModel dx="1116" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1898" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,7 +16,7 @@
         <mxCell id="8WWaU90uD-3OsJMU1C4m-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="8WWaU90uD-3OsJMU1C4m-45" target="8WWaU90uD-3OsJMU1C4m-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8WWaU90uD-3OsJMU1C4m-45" value="&lt;div&gt;INA219&lt;/div&gt;3.7V" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+        <mxCell id="8WWaU90uD-3OsJMU1C4m-45" value="&lt;div&gt;Amperemeter&lt;br&gt;&lt;/div&gt;&lt;div&gt;INA219&lt;/div&gt;3.7V" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="610" y="199" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8WWaU90uD-3OsJMU1C4m-52" target="8WWaU90uD-3OsJMU1C4m-55" edge="1">
@@ -118,7 +118,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8WWaU90uD-3OsJMU1C4m-57" value="&lt;div&gt;GPS&lt;/div&gt;&lt;div&gt;5V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+        <mxCell id="8WWaU90uD-3OsJMU1C4m-57" value="&lt;div&gt;GPS&lt;/div&gt;&lt;div&gt;u-Blox&lt;br&gt;&lt;/div&gt;&lt;div&gt;5V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="1083" y="420" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-63" value="&lt;div&gt;Neopixel Ring&lt;/div&gt;&lt;div&gt;5V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
@@ -137,10 +137,10 @@
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8WWaU90uD-3OsJMU1C4m-69" value="&lt;div&gt;DHT11&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+        <mxCell id="8WWaU90uD-3OsJMU1C4m-69" value="&lt;div&gt;Temperatur- og fugtmåler&lt;br&gt;&lt;/div&gt;&lt;div&gt;DHT11&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="430" y="540" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="8WWaU90uD-3OsJMU1C4m-78" value="&lt;div&gt;HD44780&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+        <mxCell id="8WWaU90uD-3OsJMU1C4m-78" value="&lt;div&gt;LCD-skærm&lt;br&gt;&lt;/div&gt;&lt;div&gt;HD44780&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="760" y="790" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-83" value="&lt;div&gt;Neopixel Strip&lt;/div&gt;&lt;div&gt;5V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
@@ -165,7 +165,7 @@
             <mxPoint x="6" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8WWaU90uD-3OsJMU1C4m-88" value="&lt;div&gt;GY-521&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+        <mxCell id="8WWaU90uD-3OsJMU1C4m-88" value="&lt;div&gt;Gyroskop &amp;amp; Accelerometer&lt;br&gt;&lt;/div&gt;&lt;div&gt;GY-521&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="430" y="380" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-89" value="&lt;div&gt;2 push knapper&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
