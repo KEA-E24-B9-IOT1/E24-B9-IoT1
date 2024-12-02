@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" version="24.9.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="740" dy="444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -15,7 +15,7 @@
             <mxPoint x="414" y="590" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uX4t5nVAF5KKWgH_RehO-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.931;entryY=0.503;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="uX4t5nVAF5KKWgH_RehO-5" edge="1" target="2UsnMuVY_zW_Q5jKJ0rV-0">
+        <mxCell id="uX4t5nVAF5KKWgH_RehO-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.931;entryY=0.503;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="uX4t5nVAF5KKWgH_RehO-5" target="2UsnMuVY_zW_Q5jKJ0rV-0" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="520" y="640" />
@@ -42,6 +42,9 @@
             <mxPoint x="414" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="rPw4wBBscRewz4K8amDD-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="uX4t5nVAF5KKWgH_RehO-15" target="rPw4wBBscRewz4K8amDD-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="uX4t5nVAF5KKWgH_RehO-15" value="Udregn batteri-% og resterende levetid baseret på strømforbrug" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="354" y="420" width="120" height="80" as="geometry" />
         </mxCell>
@@ -51,14 +54,17 @@
         <mxCell id="2UsnMuVY_zW_Q5jKJ0rV-1" value="&lt;div&gt;Opdater display&amp;nbsp;&lt;/div&gt;&lt;div&gt;med batteri-%&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="354" y="530" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KpqKvWCj_C5n3EA-Ek4t-0" value="Tænd løsning" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="KpqKvWCj_C5n3EA-Ek4t-0" value="Tænd løsning" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="354" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KpqKvWCj_C5n3EA-Ek4t-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.495;exitY=1.003;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-0" target="KpqKvWCj_C5n3EA-Ek4t-0">
+        <mxCell id="KpqKvWCj_C5n3EA-Ek4t-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.495;exitY=1.003;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5z2Wnowq-uhxzEn1UQt-0" target="KpqKvWCj_C5n3EA-Ek4t-0" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="430" y="280" as="sourcePoint" />
             <mxPoint x="480" y="230" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="rPw4wBBscRewz4K8amDD-0" value="ID 2" style="shape=offPageConnector;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="520" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
