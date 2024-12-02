@@ -56,7 +56,10 @@ def batt_percentage():
     voltage=adc.read_voltage()*2
     batt_percentage=((voltage-3)/(4.2-3.0))*100
     return batt_percentage
-
+                                           # Make client object to connect to thingsboard
+client = TBDeviceMqttClient(secrets.SERVER_IP_ADDRESS, access_token = secrets.ACCESS_TOKEN)
+client.connect()                           # Connecting to ThingsBoard
+print("connected to thingsboard, starting to send and receive data")
 while True:
     try:
         print(f"free memory: {gc.mem_free()}") # monitor memory left
@@ -68,9 +71,7 @@ while True:
         lat_lon = get_lat_lon()           # multiple returns in tuple format
         print(lat_lon)
         if lat_lon:
-            lcd.clear()
-            lcd.move_to(0,0)
-            lcd.putstr("La: {gps.latitude} Lo:
+                                          # store telemetry in dictionary      
             telemetry = {'Latitude': lat_lon[0],
                          'Longitude': lat_lon[1],
                          'Course' : gps.get_course(),
