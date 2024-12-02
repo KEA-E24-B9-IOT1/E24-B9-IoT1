@@ -9,7 +9,6 @@ from machine import Pin, ADC
 from gpio_lcd import GpioLcd
 from adc_sub import ADC_substitute
 from time import sleep
-from random import choice
 
 # CONFIGURATION
 pin_adc=34
@@ -34,13 +33,14 @@ lcd=GpioLcd(
     lcd_num_lines,
     lcd_num_columns)
 
-batt_percentage=None
-
-while True:
+def batt_percentage():
     voltage=adc.read_voltage()*2
     batt_percentage=((voltage-3)/(4.2-3.0))*100
-    if batt_percentage != batt_percentage:
-        lcd.move_to(0,0)
-        lcd.clear()
-        lcd.write_lcd(f"Batteriprocent: {batt_percentage}")
-    sleep(5)
+    return batt_percentage
+
+while True:
+#     lcd.move_to(0,0)
+#     lcd.clear()
+#     lcd.putstr(f"Batteriprocent: {batt_percentage()}")
+    print(batt_percentage())
+    sleep(0.5)
