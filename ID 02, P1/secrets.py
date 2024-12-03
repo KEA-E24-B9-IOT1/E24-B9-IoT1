@@ -3,6 +3,6 @@ SSID = ''
 PASSWORD = ''
 
 # Server credentials
-ACCESS_TOKEN = 'YOUR ThingsBoard Device ACCESS TOKEN'
+ACCESS_TOKEN = ''
 SERVER_IP_ADDRESS = 'demo.thingsboard.io'
 
