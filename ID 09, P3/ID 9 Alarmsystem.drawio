@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.1">
   <diagram name="Page-1" id="3QTX_9LpbflqGAp3st7x">
-    <mxGraphModel dx="952" dy="407" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10" pageHeight="10" math="0" shadow="0">
+    <mxGraphModel dx="1064" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10" pageHeight="10" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -85,8 +85,13 @@
         <mxCell id="DGjk3PeGYtZa6itGFuPi-32" value="Hent GPS-data" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="1000" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DpzWiZafnMYp8E98iSSs-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DGjk3PeGYtZa6itGFuPi-35" target="DpzWiZafnMYp8E98iSSs-5">
+        <mxCell id="DpzWiZafnMYp8E98iSSs-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-35" target="DpzWiZafnMYp8E98iSSs-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sY6pQZrvIj592b8zGw_Y-1" value="Ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DpzWiZafnMYp8E98iSSs-7">
+          <mxGeometry x="0.3232" y="-3" relative="1" as="geometry">
+            <mxPoint x="-11" y="-3" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-35" value="&lt;div&gt;Har GPS-lokation&lt;/div&gt;&lt;div&gt;ændret sig?&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="102.5" y="1095" width="135" height="125" as="geometry" />
@@ -99,23 +104,23 @@
             <mxPoint x="1" y="48" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DpzWiZafnMYp8E98iSSs-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DpzWiZafnMYp8E98iSSs-1">
+        <mxCell id="DpzWiZafnMYp8E98iSSs-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DpzWiZafnMYp8E98iSSs-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-170" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DpzWiZafnMYp8E98iSSs-1" value="Deaktiver alarmsystem" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="DpzWiZafnMYp8E98iSSs-1" value="Deaktiver alarmsystem" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="-142" y="730" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DpzWiZafnMYp8E98iSSs-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="DpzWiZafnMYp8E98iSSs-3">
+        <mxCell id="DpzWiZafnMYp8E98iSSs-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="DpzWiZafnMYp8E98iSSs-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="270" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DpzWiZafnMYp8E98iSSs-3" value="Aktiver&amp;nbsp;&lt;div&gt;alarmsystem&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="DpzWiZafnMYp8E98iSSs-3" value="Aktiver&amp;nbsp;&lt;div&gt;alarmsystem&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="115" y="715" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DpzWiZafnMYp8E98iSSs-5" value="&lt;div&gt;Aktiver Alarm&lt;/div&gt;&lt;div&gt;LED&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="DpzWiZafnMYp8E98iSSs-5" value="&lt;div&gt;Aktiver Alarm&lt;/div&gt;&lt;div&gt;LED&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="265" y="1131" width="100" height="52.5" as="geometry" />
         </mxCell>
       </root>
