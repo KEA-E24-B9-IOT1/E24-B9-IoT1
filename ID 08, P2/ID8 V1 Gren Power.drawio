@@ -1,61 +1,9 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.1">
   <diagram name="Side-1" id="MIh432SVvvTU2UH0zctk">
-    <mxGraphModel dx="954" dy="1761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-3" dy="2030" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qWMFO-Yb1zcle8_sYHGA-1" target="qWMFO-Yb1zcle8_sYHGA-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-7" value="Ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qWMFO-Yb1zcle8_sYHGA-6" vertex="1" connectable="0">
-          <mxGeometry x="-0.3143" y="2" relative="1" as="geometry">
-            <mxPoint x="25" y="-12" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qWMFO-Yb1zcle8_sYHGA-1" target="qWMFO-Yb1zcle8_sYHGA-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-10" value="Nej" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qWMFO-Yb1zcle8_sYHGA-9" vertex="1" connectable="0">
-          <mxGeometry x="-0.6" y="2" relative="1" as="geometry">
-            <mxPoint x="-10" y="-18" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-1" value="Grøn strøm. &lt;br&gt;&lt;div&gt;CO2-belastning under&amp;nbsp;&lt;/div&gt;&lt;div&gt;50g/kwh?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="355" y="200" width="170" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="qWMFO-Yb1zcle8_sYHGA-3" target="qWMFO-Yb1zcle8_sYHGA-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-3" value="ID 8 Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="400" y="40" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qWMFO-Yb1zcle8_sYHGA-5" target="tQk24-G_1-4F_4C1g830-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="470" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-5" value="Åbner for relæ&lt;div&gt;Tænder for Grøn LED&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="160" y="360" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="qWMFO-Yb1zcle8_sYHGA-8" target="tQk24-G_1-4F_4C1g830-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="500" y="470" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-8" value="Lukker for relæ&lt;div&gt;Tænder for Rød LED&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="560" y="360" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qWMFO-Yb1zcle8_sYHGA-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="qWMFO-Yb1zcle8_sYHGA-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="440" y="550" />
-              <mxPoint x="750" y="550" />
-              <mxPoint x="750" y="160" />
-              <mxPoint x="440" y="160" />
-            </Array>
-            <mxPoint x="440" y="500" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="JBFvpoAypBMXisZYCuYG-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="JBFvpoAypBMXisZYCuYG-5" target="JBFvpoAypBMXisZYCuYG-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -126,9 +74,6 @@
         </mxCell>
         <mxCell id="JBFvpoAypBMXisZYCuYG-22" value="&lt;div&gt;Sluk for indikator&lt;/div&gt;&lt;div&gt;for at der er grøn energi&lt;br&gt;(LED?)&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="1380" y="300" width="180" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="tQk24-G_1-4F_4C1g830-1" value="Vent 30min" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="440" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
