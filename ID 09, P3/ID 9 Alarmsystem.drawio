@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
   <diagram name="Page-1" id="3QTX_9LpbflqGAp3st7x">
-    <mxGraphModel dx="1914" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10" pageHeight="10" math="0" shadow="0">
+    <mxGraphModel dx="952" dy="407" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10" pageHeight="10" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,16 +16,20 @@
         <mxCell id="DGjk3PeGYtZa6itGFuPi-2" value="&lt;div&gt;Brugerinput gennem&lt;/div&gt;&lt;div&gt;ThingsBoard&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="-37" y="450" width="165" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-5" target="DGjk3PeGYtZa6itGFuPi-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="DGjk3PeGYtZa6itGFuPi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="173" y="715" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-10" value="Aktiver" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DGjk3PeGYtZa6itGFuPi-9" vertex="1" connectable="0">
           <mxGeometry x="-0.3545" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-5" target="DGjk3PeGYtZa6itGFuPi-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="DGjk3PeGYtZa6itGFuPi-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-5" target="DpzWiZafnMYp8E98iSSs-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-82" y="720" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-12" value="Deaktiver" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DGjk3PeGYtZa6itGFuPi-11" vertex="1" connectable="0">
           <mxGeometry x="-0.3333" y="-3" relative="1" as="geometry">
@@ -35,16 +39,11 @@
         <mxCell id="DGjk3PeGYtZa6itGFuPi-5" value="Input:&lt;br&gt;&lt;div&gt;Aktiver eller deaktiver alarmsystem?&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-22" y="555" width="135" height="125" as="geometry" />
         </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-7" target="DGjk3PeGYtZa6itGFuPi-24" edge="1">
+        <mxCell id="DGjk3PeGYtZa6itGFuPi-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="DGjk3PeGYtZa6itGFuPi-24" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="173" y="820" as="targetPoint" />
+            <mxPoint x="173" y="775" as="sourcePoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-7" value="Aktiver alarmsystem" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="113" y="715" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-8" value="Deaktiver alarmsystem" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-142" y="715" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-13" target="DGjk3PeGYtZa6itGFuPi-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -56,9 +55,6 @@
         <mxCell id="DGjk3PeGYtZa6itGFuPi-13" value="&lt;div&gt;Vent på ny besked fra ThingsBoard&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-232" y="525" width="134.5" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.452;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-8" target="DGjk3PeGYtZa6itGFuPi-13" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-16" target="DGjk3PeGYtZa6itGFuPi-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -68,9 +64,6 @@
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-16" value="&lt;div&gt;Vent på ny besked fra ThingsBoard&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="187.75" y="525" width="134.5" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.005;exitY=0.202;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-7" target="DGjk3PeGYtZa6itGFuPi-16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-24" value="Hent GPS-data" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="113" y="810" width="120" height="60" as="geometry" />
@@ -92,7 +85,7 @@
         <mxCell id="DGjk3PeGYtZa6itGFuPi-32" value="Hent GPS-data" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="1000" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-35" target="DGjk3PeGYtZa6itGFuPi-39" edge="1">
+        <mxCell id="DpzWiZafnMYp8E98iSSs-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DGjk3PeGYtZa6itGFuPi-35" target="DpzWiZafnMYp8E98iSSs-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-35" value="&lt;div&gt;Har GPS-lokation&lt;/div&gt;&lt;div&gt;ændret sig?&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -106,8 +99,24 @@
             <mxPoint x="1" y="48" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-39" value="&lt;div&gt;Aktiver Alarm&lt;/div&gt;&lt;div&gt;LED&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="265" y="1127.5" width="120" height="60" as="geometry" />
+        <mxCell id="DpzWiZafnMYp8E98iSSs-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DpzWiZafnMYp8E98iSSs-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DpzWiZafnMYp8E98iSSs-1" value="Deaktiver alarmsystem" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-142" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DpzWiZafnMYp8E98iSSs-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="DpzWiZafnMYp8E98iSSs-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DpzWiZafnMYp8E98iSSs-3" value="Aktiver&amp;nbsp;&lt;div&gt;alarmsystem&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="715" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DpzWiZafnMYp8E98iSSs-5" value="&lt;div&gt;Aktiver Alarm&lt;/div&gt;&lt;div&gt;LED&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="1131" width="100" height="52.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
