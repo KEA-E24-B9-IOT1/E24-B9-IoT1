@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
   <diagram name="Page-1" id="Au_jINocBcU9wG9LVLza">
-    <mxGraphModel dx="1674" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1080" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-44" value="&lt;div&gt;Litiumbatteri&lt;/div&gt;&lt;div&gt;3.7V (3.0V - 4.2V)&lt;/div&gt;&lt;div&gt;1800 mAh&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="460" y="199" width="110" height="110" as="geometry" />
+          <mxGeometry x="460" y="161" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="8WWaU90uD-3OsJMU1C4m-45" target="8WWaU90uD-3OsJMU1C4m-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -17,22 +17,24 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-45" value="&lt;div&gt;Amperemeter&lt;br&gt;&lt;/div&gt;&lt;div&gt;INA219&lt;/div&gt;3.7V" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="610" y="199" width="110" height="110" as="geometry" />
+          <mxGeometry x="610" y="161" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="8WWaU90uD-3OsJMU1C4m-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8WWaU90uD-3OsJMU1C4m-52" target="8WWaU90uD-3OsJMU1C4m-55" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="8WWaU90uD-3OsJMU1C4m-56" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lXn6mS8OsUs8GfNJ5zLR-2" target="8WWaU90uD-3OsJMU1C4m-55" edge="1">
+          <mxGeometry x="-0.1843" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="e1QlHReIarLJo4ZQw5A4-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="8WWaU90uD-3OsJMU1C4m-52" target="e1QlHReIarLJo4ZQw5A4-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="843" y="179" />
-              <mxPoint x="360" y="179" />
+              <mxPoint x="843" y="120" />
+              <mxPoint x="360" y="120" />
               <mxPoint x="360" y="878" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-52" value="&lt;div&gt;Boost Converter&lt;/div&gt;&lt;div&gt;Ind: 3.0V - 4.2V&lt;/div&gt;&lt;div&gt;Ud: 5V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="760" y="199" width="110" height="110" as="geometry" />
+          <mxGeometry x="760" y="161" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="8WWaU90uD-3OsJMU1C4m-55" target="8WWaU90uD-3OsJMU1C4m-57" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -190,6 +192,15 @@
         </mxCell>
         <mxCell id="ILI41Hoijf9lR41PXTiz-2" value="Relæ&lt;div&gt;5V&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="610" y="801.5" width="111" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="lXn6mS8OsUs8GfNJ5zLR-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8WWaU90uD-3OsJMU1C4m-52" target="lXn6mS8OsUs8GfNJ5zLR-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="843" y="309" as="sourcePoint" />
+            <mxPoint x="865" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lXn6mS8OsUs8GfNJ5zLR-2" value="Educaboard spændingsforsyning&lt;div&gt;7,5V - 9V&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="770" y="300" width="110" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
