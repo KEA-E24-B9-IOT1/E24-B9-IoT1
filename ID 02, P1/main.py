@@ -56,7 +56,7 @@ def dht11_temp():
 def batt_percentage():
     """adc through ina219, returns batt% from 3.0-4.2V
     Li-ion batt."""
-    voltage=adc.read_voltage()*3 # HAS TO BE 2 FOR A PROPER READING
+    voltage=adc.read_voltage()*2 # *2 for a proper reading, *3 for simulated batteri
     batt_percentage=((voltage-3)/(4.2-3.0))*100
     return batt_percentage
 
@@ -70,17 +70,24 @@ while True:
             gc.collect()                  # free memory 
         if gps.receive_nmea_data(): # If gps data is received
             data={"La":gps.get_latitude(),"Lo":gps.get_longitude(),"Course":gps.get_course(),"Speed":gps.get_speed(),"Temp":dht11_temp(),"Batt%":batt_percentage()}
-            lcd.move_to(0,0)
-            lcd.putstr(" "*20)
-            lcd.move_to(0,0)
             print(data)
+            lcd.move_to(0,0)
+            lcd.putstr(" "*10)
+            lcd.move_to(0,0)
             lcd.putstr(f"Batt%:{int(batt_percentage())} Temp:{dht11_temp()}")
+            lcd.move_to(0,1)
+            lcd.putstr(" "*10)
             lcd.move_to(0,1)
             lcd.putstr(f"La:{gps.get_latitude()}")
             lcd.move_to(0,2)
-            lcd.putstr(" "*20)
+            lcd.putstr(" "*10)
             lcd.move_to(0,2)
-            lcd.putstr(f"Lo:{gps.get_longitude()} Speed:{math.ceil(gps.get_speed())} Course:{gps.get_course()}")
+            lcd.putstr(f"Lo:{gps.get_longitude()}")
+            lcd.move_to(0,3)
+            lcd.putstr(" "*10)
+            lcd.move_to(0,3)
+            # Lav Course om til at give kardinalværdier i stedet for tal
+            lcd.putstr(f"Speed:{math.ceil(gps.get_speed())} Course:{gps.get_course()}")
         sleep(1)                          # send telemetry once every second
     except KeyboardInterrupt:
         print("Disconnected!")
