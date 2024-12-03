@@ -110,7 +110,7 @@
             <mxPoint x="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8WWaU90uD-3OsJMU1C4m-55" value="&lt;div&gt;ESP32&lt;/div&gt;&lt;div&gt;5V&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+        <mxCell id="8WWaU90uD-3OsJMU1C4m-55" value="&lt;div&gt;ESP32&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;5V&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="715" y="450" width="200" height="200" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="8WWaU90uD-3OsJMU1C4m-57" target="8WWaU90uD-3OsJMU1C4m-55" edge="1">
@@ -155,7 +155,7 @@
           <mxGeometry x="1083" y="700" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-85" value="&lt;div&gt;Solenoidaktuator&lt;/div&gt;&lt;div&gt;6-12V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="604" y="953" width="110" height="110" as="geometry" />
+          <mxGeometry x="610" y="953" width="110" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8WWaU90uD-3OsJMU1C4m-87" value="&lt;div&gt;Buzzer&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="900" y="802.5" width="110" height="110" as="geometry" />
@@ -179,17 +179,17 @@
         <mxCell id="8WWaU90uD-3OsJMU1C4m-89" value="&lt;div&gt;2 push knapper&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="430" y="700" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="ILI41Hoijf9lR41PXTiz-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e1QlHReIarLJo4ZQw5A4-2" target="ILI41Hoijf9lR41PXTiz-2">
+        <mxCell id="ILI41Hoijf9lR41PXTiz-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="e1QlHReIarLJo4ZQw5A4-2" target="ILI41Hoijf9lR41PXTiz-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e1QlHReIarLJo4ZQw5A4-2" value="&lt;div&gt;Boost Converter&lt;/div&gt;&lt;div&gt;Ind: 5V&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ud: 8V&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="430" y="850" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="ILI41Hoijf9lR41PXTiz-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ILI41Hoijf9lR41PXTiz-2" target="8WWaU90uD-3OsJMU1C4m-85">
+        <mxCell id="ILI41Hoijf9lR41PXTiz-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ILI41Hoijf9lR41PXTiz-2" target="8WWaU90uD-3OsJMU1C4m-85" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ILI41Hoijf9lR41PXTiz-2" value="Relæ&lt;div&gt;5V&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="604" y="801.5" width="111" height="111" as="geometry" />
+        <mxCell id="ILI41Hoijf9lR41PXTiz-2" value="Relæ&lt;div&gt;5V&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="610" y="801.5" width="111" height="111" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
