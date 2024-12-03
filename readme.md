@@ -4,7 +4,7 @@
 - HelligeGiffel
 - MalisCodeBlock
 - MarkusHajdu
-- Nickanii
+- NickaNii
 - NicolaiMartini
 
 ## Projektforløb:
