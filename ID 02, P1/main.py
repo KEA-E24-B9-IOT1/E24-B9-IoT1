@@ -6,6 +6,7 @@ from gps_simple import GPS_SIMPLE
 import dht
 from adc_sub import ADC_substitute
 from gpio_lcd import GpioLcd
+import math
 
 
 ##### PINS
@@ -30,9 +31,7 @@ gps_speed = 9600
 
 
 ##### OBJECTS
-# UART object creation
 uart = UART(gps_port, gps_speed)
-# GPS object creation  
 gps = GPS_SIMPLE(uart)
 adc=ADC_substitute(adc_pin)
 dht11=dht.DHT11(Pin(dht11_pin))
@@ -57,7 +56,7 @@ def dht11_temp():
 def batt_percentage():
     """adc through ina219, returns batt% from 3.0-4.2V
     Li-ion batt."""
-    voltage=adc.read_voltage()*2
+    voltage=adc.read_voltage()*3 # HAS TO BE 2 FOR A PROPER READING
     batt_percentage=((voltage-3)/(4.2-3.0))*100
     return batt_percentage
 
@@ -72,15 +71,16 @@ while True:
         if gps.receive_nmea_data(): # If gps data is received
             data={"La":gps.get_latitude(),"Lo":gps.get_longitude(),"Course":gps.get_course(),"Speed":gps.get_speed(),"Temp":dht11_temp(),"Batt%":batt_percentage()}
             lcd.move_to(0,0)
-            lcd.putstr(" "*40)
+            lcd.putstr(" "*20)
             lcd.move_to(0,0)
             print(data)
-#             lcd.putstr(data.get('La'))#:{data.get('La')}")
-#             lcd.putstr(f"{data[0]}:{data.get('La')} Lo:{data.get('Lo'} Course:{data.get('Course'}")
-#             lcd.move_to(0,2)
-#             lcd.putstr(" "*40)
-#             lcd.move_to(0,2)
-#             lcd.putstr(f"Speed:{data.get('Speed'} Temp:{data.get('Temp')} Batt%:{data.get('Batt%'}")
+            lcd.putstr(f"Batt%:{int(batt_percentage())} Temp:{dht11_temp()}")
+            lcd.move_to(0,1)
+            lcd.putstr(f"La:{gps.get_latitude()}")
+            lcd.move_to(0,2)
+            lcd.putstr(" "*20)
+            lcd.move_to(0,2)
+            lcd.putstr(f"Lo:{gps.get_longitude()} Speed:{math.ceil(gps.get_speed())} Course:{gps.get_course()}")
         sleep(1)                          # send telemetry once every second
     except KeyboardInterrupt:
         print("Disconnected!")
