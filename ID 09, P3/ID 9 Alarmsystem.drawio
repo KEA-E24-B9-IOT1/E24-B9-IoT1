@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
   <diagram name="Page-1" id="3QTX_9LpbflqGAp3st7x">
-    <mxGraphModel dx="964" dy="96" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10" pageHeight="10" math="0" shadow="0">
+    <mxGraphModel dx="1914" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10" pageHeight="10" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,14 +72,8 @@
         <mxCell id="DGjk3PeGYtZa6itGFuPi-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.005;exitY=0.202;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-7" target="DGjk3PeGYtZa6itGFuPi-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-24" target="DGjk3PeGYtZa6itGFuPi-25" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-24" value="Hent GPS-data" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="113" y="810" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-25" value="GPS-modul der henter GPS-data" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="715" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-27" target="DGjk3PeGYtZa6itGFuPi-32" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -90,9 +84,6 @@
           <mxGeometry x="123" y="905" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-24" target="DGjk3PeGYtZa6itGFuPi-27" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="DGjk3PeGYtZa6itGFuPi-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-32" target="DGjk3PeGYtZa6itGFuPi-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="DGjk3PeGYtZa6itGFuPi-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DGjk3PeGYtZa6itGFuPi-32" target="DGjk3PeGYtZa6itGFuPi-35" edge="1">
