@@ -75,24 +75,23 @@ while True:
                   "Speed":gps.get_speed(),
                   "Temp":dht11_temp(),
                   "Batt%":batt_percentage()}
-            print(data)
             lcd.move_to(0,0)
             lcd.putstr(" "*10)
             lcd.move_to(0,0)
-            lcd.putstr(f"Batt%:{int(batt_percentage())} Temp:{dht11_temp()}")
+            lcd.putstr(f"Batt%:{data.get('Batt%'):.0f} Temp:{data.get('Temp')}")
             lcd.move_to(0,1)
             lcd.putstr(" "*10)
             lcd.move_to(0,1)
-            lcd.putstr(f"La:{gps.get_latitude()}")
+            lcd.putstr(f"La/Lo:{data.get('La'):.3f}/{data.get('Lo'):.3f}")
             lcd.move_to(0,2)
             lcd.putstr(" "*10)
             lcd.move_to(0,2)
-            lcd.putstr(f"Lo:{gps.get_longitude()}")
+            lcd.putstr(f"Lo:{data.get('Lo'):.2f}")
             lcd.move_to(0,3)
             lcd.putstr(" "*10)
             lcd.move_to(0,3)
             # Lav Course om til at give kardinalværdier i stedet for tal
-            lcd.putstr(f"Speed:{math.ceil(gps.get_speed())} Course:{gps.get_course()}")
+            lcd.putstr(f"Speed:{data.get('Speed'):.1f} Course:{data.get('Course')}")
         sleep(1)                          # send telemetry once every second
     except KeyboardInterrupt:
         print("Disconnected!")
