@@ -69,7 +69,12 @@ while True:
             print("Garbage collected!")
             gc.collect()                  # free memory 
         if gps.receive_nmea_data(): # If gps data is received
-            data={"La":gps.get_latitude(),"Lo":gps.get_longitude(),"Course":gps.get_course(),"Speed":gps.get_speed(),"Temp":dht11_temp(),"Batt%":batt_percentage()}
+            data={"La":gps.get_latitude(),
+                  "Lo":gps.get_longitude(),
+                  "Course":gps.get_course(),
+                  "Speed":gps.get_speed(),
+                  "Temp":dht11_temp(),
+                  "Batt%":batt_percentage()}
             print(data)
             lcd.move_to(0,0)
             lcd.putstr(" "*10)
