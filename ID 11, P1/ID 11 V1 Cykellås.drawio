@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.1">
   <diagram name="Page-1" id="JeT9hdmqLSIuItDdJ_t3">
-    <mxGraphModel dx="824" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1514" dy="718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -9,61 +9,110 @@
             <mxPoint x="414" y="620" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y1bEKRCRlc0KionHaVHA-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="y1bEKRCRlc0KionHaVHA-4" target="y1bEKRCRlc0KionHaVHA-18" edge="1">
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="y1bEKRCRlc0KionHaVHA-4" target="y1bEKRCRlc0KionHaVHA-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y1bEKRCRlc0KionHaVHA-4" value="Input fra brugeren:&lt;div&gt;Manipuler blinklys&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="331" y="640" width="166" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="y1bEKRCRlc0KionHaVHA-18" target="MpUK6SJS8AyKSv_5bXdZ-10">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="414" y="830" as="targetPoint" />
+            <mxPoint x="239" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y1bEKRCRlc0KionHaVHA-4" value="Input fra brugeren:&lt;div&gt;Benyt lås&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="331" y="650" width="166" height="60" as="geometry" />
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-4" value="Venstre" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MpUK6SJS8AyKSv_5bXdZ-3">
+          <mxGeometry x="-0.2844" y="5" relative="1" as="geometry">
+            <mxPoint x="-8" y="-5" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="y1bEKRCRlc0KionHaVHA-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="y1bEKRCRlc0KionHaVHA-18" edge="1">
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="y1bEKRCRlc0KionHaVHA-18" target="MpUK6SJS8AyKSv_5bXdZ-9">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="300" y="880" as="targetPoint" />
+            <mxPoint x="589" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y1bEKRCRlc0KionHaVHA-43" value="Låst" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="y1bEKRCRlc0KionHaVHA-39" vertex="1" connectable="0">
-          <mxGeometry x="-0.0444" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-8" value="Højre" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MpUK6SJS8AyKSv_5bXdZ-7">
+          <mxGeometry x="-0.2252" y="4" relative="1" as="geometry">
+            <mxPoint x="-3" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y1bEKRCRlc0KionHaVHA-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="y1bEKRCRlc0KionHaVHA-18" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="530" y="880" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="y1bEKRCRlc0KionHaVHA-42" value="Ulåst" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="y1bEKRCRlc0KionHaVHA-41" vertex="1" connectable="0">
-          <mxGeometry x="-0.1778" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="y1bEKRCRlc0KionHaVHA-18" value="Hvad er låsens nuværende status?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="349" y="820" width="130" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="y1bEKRCRlc0KionHaVHA-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" target="y1bEKRCRlc0KionHaVHA-4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="590" y="680" />
-            </Array>
-            <mxPoint x="590" y="850" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="0qf8okVKioscCAvbD26K-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="y1bEKRCRlc0KionHaVHA-4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="240" y="680" />
-            </Array>
-            <mxPoint x="240" y="850" as="sourcePoint" />
-          </mxGeometry>
+        <mxCell id="y1bEKRCRlc0KionHaVHA-18" value="&lt;div&gt;Hvilket blinklys&lt;/div&gt;&lt;div&gt;manipuleres?&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="348" y="840" width="130" height="120" as="geometry" />
         </mxCell>
         <mxCell id="ymEipVwwHrK89p57_Rxv-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="354" y="540" width="120" height="80" as="geometry" />
+          <mxGeometry x="354" y="530" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="9dS228iLhD7Xvn49rrQr-1" value="&lt;div&gt;Deaktiver låsen,&amp;nbsp;&lt;/div&gt;&lt;div&gt;lås op for cyklen&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="180" y="852" width="125" height="60" as="geometry" />
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-19" value="Tændt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-9" target="MpUK6SJS8AyKSv_5bXdZ-13">
+          <mxGeometry x="-0.1268" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="9dS228iLhD7Xvn49rrQr-2" value="&lt;div&gt;Aktiver låsen,&amp;nbsp;&lt;/div&gt;&lt;div&gt;lås cyklen&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="525" y="852" width="115" height="60" as="geometry" />
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-9" target="MpUK6SJS8AyKSv_5bXdZ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-9" value="&lt;div&gt;Hvad er lysets&lt;/div&gt;&lt;div&gt;nuværende&lt;/div&gt;&lt;div&gt;status?&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="539" y="840" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="MpUK6SJS8AyKSv_5bXdZ-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="167" y="900" as="sourcePoint" />
+            <mxPoint x="98" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-18" value="Tændt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MpUK6SJS8AyKSv_5bXdZ-17">
+          <mxGeometry x="-0.2174" relative="1" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-10" target="MpUK6SJS8AyKSv_5bXdZ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-22" value="Slukket" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MpUK6SJS8AyKSv_5bXdZ-21">
+          <mxGeometry x="0.0467" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-10" value="&lt;div&gt;Hvad er lysets&lt;/div&gt;&lt;div&gt;nuværende&lt;/div&gt;&lt;div&gt;status?&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="840" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-11" value="Tænd blinklys" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="544" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-12" value="Sluk blinklys" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-13" target="MpUK6SJS8AyKSv_5bXdZ-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-13" value="Sluk blinklys" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-16" target="MpUK6SJS8AyKSv_5bXdZ-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-16" value="Tænd blinklys" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="164" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-27" target="y1bEKRCRlc0KionHaVHA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-27" value="Vent på input" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="554" y="640" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-30" target="y1bEKRCRlc0KionHaVHA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-30" value="Vent på input" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="174" y="640" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-11" target="MpUK6SJS8AyKSv_5bXdZ-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MpUK6SJS8AyKSv_5bXdZ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MpUK6SJS8AyKSv_5bXdZ-12" target="MpUK6SJS8AyKSv_5bXdZ-30">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
