@@ -55,6 +55,14 @@ np = NeoPixel(Pin(16, Pin.OUT), n) #np Object on Pin 16
 i2c = I2C(0) #I2C init. Pin 18 SCL, Pin 19 SDA
 imu = MPU6050(i2c) #MPU
 
+# ID 7
+
+
+# ID 8
+
+
+# ID 9
+
 
 # ID 11
 left_blinker_pin=26
