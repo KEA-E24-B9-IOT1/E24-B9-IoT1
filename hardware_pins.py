@@ -50,10 +50,10 @@ gps_speed = 9600
 
 # ID 6
 n = 12 #Number of NeoPixels
-np = NeoPixel(Pin(16, Pin.OUT), n) #np Object on Pin 16
+# np = NeoPixel(Pin(16, Pin.OUT), n) #np Object on Pin 16
 
-i2c = I2C(0) #I2C init. Pin 18 SCL, Pin 19 SDA
-imu = MPU6050(i2c) #MPU
+# i2c = I2C(0) #I2C init. Pin 18 SCL, Pin 19 SDA
+# imu = MPU6050(i2c) #MPU
 
 # ID 7
 
@@ -62,11 +62,11 @@ imu = MPU6050(i2c) #MPU
 
 
 # ID 9
-
+pin_buzzer=14 # Jumpes JP1-SCK <-> JP6-GP6 eller via Port Exp.
 
 # ID 11
-left_blinker_pin=26
-left_button_pin=4
+pin_blinker_left=26
+pin_button_left=4
 
-right_blinker_pin=12
-right_button_pin=0
+pin_blinker_right=12 # Jumpes JP1-MISO <-> JP6-GP2 eller via Port Exp.
+pin_button_right=0
