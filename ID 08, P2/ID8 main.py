@@ -14,7 +14,7 @@ starttime_clock = ticks_ms() - threshold_update
 red_led = Pin(26, Pin.OUT)
 yel_led = Pin(12, Pin.OUT)
 gre_led = Pin(13, Pin.OUT)
-relay = Pin(15, Pin.OUT)
+relay = Pin(16, Pin.OUT)
 #Opstart
 red_led.value(0) #Slukker for rød
 yel_led.value(0) #Tænder for gul

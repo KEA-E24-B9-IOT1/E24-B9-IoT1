@@ -77,7 +77,7 @@ while True:
     try:
         if gc.mem_free() < 2000:          # free memory if below 2000 bytes left
             gc.collect()
-        if gps.receive_nmea_data() and gps_loc==None:
+        if gps.receive_nmea_data() and gps_loc==None ang gps.get_validity()=="A":
             gps_loc={"Latitude":gps.get_latitude(),
                      "Longitude":gps.get_longitude()}
             print("Initial gps coordinates collected")

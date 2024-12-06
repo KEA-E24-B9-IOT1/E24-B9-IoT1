@@ -5,33 +5,17 @@ Løsningen skal køre på batteri og skal som minimum kunne fungere i en time.
 Samtidig skal batteristatus, resterende kapacitet i procent, vises.
 """
 
-from machine import Pin, ADC
-from gpio_lcd import GpioLcd
-from adc_sub import ADC_substitute
+from adc_sub import ADC_substitute # Skal erstattes af INA219 modul
 from time import sleep
+import hardware_pins_config as hw
 
 # CONFIGURATION
-pin_adc=34
-lcd_rs_pin=27
-lcd_enable_pin=25
-lcd_d4_pin=33
-lcd_d5_pin=32
-lcd_d6_pin=21
-lcd_d7_pin=22
-lcd_num_lines=4
-lcd_num_columns=20
+pin_ina_scl=hw.pin_ina_scl # INA 219serial clock line
+pin_adc_sda=hw.pin_ina_sda # INA219 serial data line
 
 # OBJECTS
-adc=ADC_substitute(pin_adc)
-lcd=GpioLcd(
-    Pin(lcd_rs_pin),
-    Pin(lcd_enable_pin),
-    Pin(lcd_d4_pin),
-    Pin(lcd_d5_pin),
-    Pin(lcd_d6_pin),
-    Pin(lcd_d7_pin),
-    lcd_num_lines,
-    lcd_num_columns)
+adc=ADC_substitute(34) # Skal erstattes 
+lcd=hw.lcd # Hent lcd fra hw-modul
 
 def batt_percentage():
     voltage=adc.read_voltage()*2
@@ -39,8 +23,8 @@ def batt_percentage():
     return batt_percentage
 
 while True:
-#     lcd.move_to(0,0)
-#     lcd.clear()
-#     lcd.putstr(f"Batteriprocent: {batt_percentage()}")
+    lcd.move_to(0,0)
+    lcd.clear()
+    lcd.putstr(f"Batteriprocent: {batt_percentage()}")
     print(batt_percentage())
     sleep(0.5)
