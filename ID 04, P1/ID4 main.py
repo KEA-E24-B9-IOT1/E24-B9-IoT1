@@ -99,7 +99,7 @@ while True:
             if gps.get_latitude() and gps.get_longitude() not in gps_list:
                 print("Motion detected! Sending coordinates to thingsboard")
                 if ticks_ms()-gps_alarm_thingsboard_ticker>10000:
-                    telemetry={"Latitude":gps.get_latitude,"Longitude":gps.get_longitude()}
+                    telemetry={"Latitude":gps.get_latitude(),"Longitude":gps.get_longitude()}
                     client.send_telemetry(telemetry)
                     gps_alarm_thingsboard_ticker=ticks_ms()
         client.set_server_side_rpc_request_handler(handler)

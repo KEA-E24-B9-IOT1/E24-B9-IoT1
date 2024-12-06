@@ -4,7 +4,7 @@ så der er et samlet overblik.
 Så kan vi evt. også importere vores pins herfra.
 """
 
-dht11_pin = 15 #
+dht11_pin = 15 # 3.3V
 
 pin_buzzer = 14 # Jumpes JP1-SCK <-> JP6-GP6 eller via Port Exp.
 
