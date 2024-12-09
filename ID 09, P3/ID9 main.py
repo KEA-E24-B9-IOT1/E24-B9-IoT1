@@ -63,7 +63,7 @@ def trigger_alarm(r, g, b): #Farvefunktion til NeoPixels
     buzzer_PWM_objekt.freq(512)
     sleep(0.5)
 
-def hanlder(req_id, method, params):
+def handler(req_id, method, params):
     """Handler callback to receive RPC from server"""
     print(f"Response: {req_id}: {method}, params {params}")
     print(params, "params type:", type(params))

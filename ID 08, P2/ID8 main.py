@@ -31,16 +31,19 @@ def fetch_green_power():
     if co2emis == None:
         return 0
     return co2emis
+
 def led_green_power():
     gre_led.value(1) #Tænder for grøn LED
     yel_led.value(1) #Fungere omvendt. Slukker
     red_led.value(0) #Slukker for rød LED
     relay.value(1) #Tænder for relæ, så opladning startes
+
 def led_no_green_power():
     gre_led.value(0) #Tænder for grøn LED
     yel_led.value(1) #Fungere omvendt. Slukker
     red_led.value(1) #Slukker for rød LED
     relay.value(0) #slukker for relæ, så opladning stoppes
+
 while True:
     if ticks_ms() > threshold_update + starttime_update:
         starttime_update = ticks_ms()

@@ -107,9 +107,6 @@
         <mxCell id="DpzWiZafnMYp8E98iSSs-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="DpzWiZafnMYp8E98iSSs-1" edge="1" target="DGjk3PeGYtZa6itGFuPi-13">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-170" y="610" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="-165" y="760" />
-            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="DpzWiZafnMYp8E98iSSs-1" value="Deaktiver alarmsystem" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
