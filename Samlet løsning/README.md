@@ -1,1 +1,0 @@
-Dette er mappen til den samlede løsning, med alle individuelle krav samarbejdende.
