@@ -4,7 +4,7 @@
     color: #0f0f0f;
   }
 
-  /* Set up image gallery and dimensions on page */
+  /* Set up image gallery and dimensions on page in case of multiple images needed */
   div.gallery{
 
   width: 1400px;
