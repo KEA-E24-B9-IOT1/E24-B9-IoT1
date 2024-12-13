@@ -17,22 +17,6 @@
     height: 55%;
   }
 
-  a:visited{
-    color:#5a5a5a;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size:50;
-  }
-  a:hover{
-    color:#00c3ff;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size:50;
-  }
   p.picmode{
     text-align: center;
   }
