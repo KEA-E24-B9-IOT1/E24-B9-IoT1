@@ -8,7 +8,7 @@ Der er også tilhørende configs og funktioner.
 ##### IMPORTS
 import dht
 
-from machine import Pin, UART, I2C
+from machine import Pin, UART, I2C, PWM
 from gpio_lcd import GpioLcd
 from ina219_lib import INA219
 from gps_simple import GPS_SIMPLE
@@ -35,7 +35,7 @@ pin_lcd_rs = 27 # Don't change
 pin_lcd_db5 = 32 # Don't change
 pin_lcd_db4 = 33 # Don't change
 pin_buzzer = 34
-pin_dht11 = 35
+pin_dht11 = 15
 pin_neostrip_one = 36
 pin_neostrip_two = 39
 pin_mpu = None # connect via sda and scl
@@ -60,21 +60,21 @@ lcd=GpioLcd(rs_pin=Pin(pin_lcd_rs),
             num_lines=lcd_num_lines,
             num_columns=lcd_num_columns) # 3.3V
 
-ina=INA219(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
+# ina=INA219(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
 
 dht11=dht.DHT11(Pin(pin_dht11)) # 3.3V
 
-buzzer_PWM_objekt=PWM(Pin(pin_buzzer,Pin.OUT),freq=1,duty=0) # 3.3V?
+# buzzer_PWM_objekt=PWM(Pin(pin_buzzer,Pin.OUT),freq=1,duty=0) # 3.3V?
 
-imu=MPU6050(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
+# imu=MPU6050(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
 
 neoring=NeoPixel(Pin(pin_neoring,Pin.OUT),15)
 
-left_blinker=NeoPixel(Pin(pin_neostrip_one,Pin.OUT),3)
+# left_blinker=NeoPixel(Pin(pin_neostrip_one,Pin.OUT),3) # Error: Pin can only be input
 
 left_button=Pin(pin_button_one,Pin.IN)
 
-right_blinker=NeoPixel(Pin(pin_neostrip_two,Pin.OUT),3)
+# right_blinker=NeoPixel(Pin(pin_neostrip_two,Pin.OUT),3) # Error: Pin can only be input
 
 right_button=Pin(pin_button_two,Pin.IN)
 
@@ -88,10 +88,10 @@ def handler_alarm(req_id,method,params):
         if method=="Enable alarm":
             if params==True:
                 print("Alarm enabled")
-                global alarm_enabled=True
+                alarm_enabled=True
             elif params==False:
                 print("Alarm disabled")
-                global alarm_enabled=False
+                alarm_enabled=False
         if method=="secondCommand":
             print(params.get("command"))
     except TypeError as e:
@@ -164,10 +164,10 @@ def blinker():
     """Function to make a signal light blink"""
     blinker_ticker=ticks_ms()
     if ticks_ms()-blinker_ticker>100:
-        i for i in range(3):
+        for i in range(3):
             np[i]=(0,50,50)
         np.write()
-        i for i in range(3):
+        for i in range(3):
             np[i]=(0,0,0)
         np.write()
         blinker_ticker=ticks_ms()

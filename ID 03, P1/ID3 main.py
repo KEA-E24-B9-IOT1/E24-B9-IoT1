@@ -1,13 +1,13 @@
 from uthingsboard.client import TBDeviceMqttClient
 from time import sleep
-from machine import reset, UART
+from machine import reset, UART, Pin
 import gc
 import secrets
 from gps_simple import GPS_SIMPLE
 import dht
 from adc_sub import ADC_substitute
 
-dht11_pin=19
+dht11_pin=15
 adc_pin=34
 gps_port = 2                               # ESP32 UART port, Educaboard ESP32 default UART port
 gps_speed = 9600                           # UART speed, defauls u-blox speed

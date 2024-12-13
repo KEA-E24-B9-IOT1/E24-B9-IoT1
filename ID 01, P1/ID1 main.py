@@ -20,13 +20,13 @@ pin_adc_sda=backend.pin_ina_sda # INA 219 serial data line
 i2c=I2C(scl=Pin(pin_ina_scl),sda=Pin(pin_ina_sda),freq=400000) # I2C instantiering af ina-pins
 # Eller vil vi hente objektet fra anden fil?
 ina219=backend.ina219
-# ina219.set_calibration_16V_400mA() # Følsomhed, kan ændres
+# ina219.set_calibration_32V_2A() # Følsomhed, kan ændres
 
 
 # FUNCTIONS
 def batt_percentage():
-    voltage=ina219.get_bus_voltage()*2
-    batt_percentage=((voltage-3)/(4.2-3.0))*100
+    voltage=ina219.get_bus_voltage()
+    batt_percentage=((voltage-6)/(8.4-6))*100
     return batt_percentage
 
 while True:
