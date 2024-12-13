@@ -1,0 +1,42 @@
+  h1{
+    text-align: center;
+    color: #0f0f0f;
+  }
+
+  div.gallery{
+  
+  width: 1400px;
+  height:100%;
+  }
+  img.gallerypics{
+  width: 30%;
+  height: 30%;
+  }
+  img.gallerypics:hover{
+    width: 35%;
+    height: 35%;
+  }
+
+  a:visited{
+    color:#5a5a5a;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:50;
+  }
+  a:hover{
+    color:#00c3ff;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:50;
+  }
+  p.picmode{
+    text-align: center;
+  }
+  footer{
+    color: #666666;
+  }
+  
