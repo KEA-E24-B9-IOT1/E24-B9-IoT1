@@ -7,7 +7,7 @@ import ID2_main
 id2 = ticks_ms()
 ##### Non Blocking Delay timing #####
 #Opgives i ms
-id2timing = 1000
+id2timing = 5000
 
 while True:
     if ticks_ms() > id2 + id2timing:

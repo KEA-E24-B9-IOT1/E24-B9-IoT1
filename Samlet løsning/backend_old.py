@@ -30,12 +30,12 @@ pin_lcd_db6 = 21 # Don't change
 pin_lcd_db7 = 22 # Don't change
 pin_lcd_contrast = 23 # Don't change
 pin_lcd_enable = 25 # Don't change
-pin_neoring = 2
+pin_neoring = 26
 pin_lcd_rs = 27 # Don't change
 pin_lcd_db5 = 32 # Don't change
 pin_lcd_db4 = 33 # Don't change
-pin_buzzer = 26
-pin_dht11 = 14
+pin_buzzer = 34
+pin_dht11 = 15
 pin_neostrip_one = 36
 pin_neostrip_two = 39
 pin_mpu = None # connect via sda and scl
@@ -60,7 +60,7 @@ lcd=GpioLcd(rs_pin=Pin(pin_lcd_rs),
             num_lines=lcd_num_lines,
             num_columns=lcd_num_columns) # 3.3V
 
-ina=INA219(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
+# ina=INA219(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
 
 dht11=dht.DHT11(Pin(pin_dht11)) # 3.3V
 
