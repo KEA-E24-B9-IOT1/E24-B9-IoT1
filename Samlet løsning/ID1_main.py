@@ -6,16 +6,7 @@ Samtidig skal batteristatus, resterende kapacitet i procent, vises.
 """
 import backend as hw # Consistency
 
-# CONFIGURATION
-
-
-# OBJECTS
-ina=hw.ina
-# ina219.set_calibration_32V_2A() # Følsomhed, kan ændres
-
 
 # FUNCTIONS
 def run():
-    hw.display(0,  0, f"Bat%:{int(hw.batt_percentage())}")
-    
-    
+    hw.display(0, 0, f"Bat%:{int(hw.batt_percentage())}")

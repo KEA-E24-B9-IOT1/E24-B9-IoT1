@@ -16,7 +16,7 @@ id6 = ticks_ms()
 
 ##### Non Blocking Delay timing #####
 #Opgives i ms
-id1timing = 300000
+id1timing = 120000
 id2timing = 5000
 # id3timing = None
 # id4timing = None

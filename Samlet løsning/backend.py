@@ -115,8 +115,7 @@ def ina_current():
 
 def batt_percentage():
     """Return battery-%, 4.2V is cons. 100%, and 3.0V is considered 0%."""
-    voltage=ina_voltage()*2 # Multiply based on circuit voltage divider
-    batt_percentage=((voltage-3)/(4.2-3.0))*100 # Return is %-based
+    batt_percentage=((ina_voltage()-6)/(8.4-6.0))*100 # Return is %-based
     return batt_percentage
 
 def batt_life():
