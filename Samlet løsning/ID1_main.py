@@ -15,16 +15,7 @@ ina=hw.ina
 
 
 # FUNCTIONS
-def batteri_percentage():
-    voltage=ina219.get_bus_voltage()
-    batt_percentage=((voltage-6)/(8.4-6))*100
-    return batt_percentage
-
-def procent():
-    lcd.putstr(f"Batteriprocent: {batt_percentage()}")
-    lcd.putstr(f"restlevetid: {3600/ina219.get_current()} timer")
-    print(batt_percentage())
-    sleep(0.5)
-def levetid():
+def run():
+    hw.display(0,  0, f"Bat%:{int(hw.batt_percentage())}")
     
     

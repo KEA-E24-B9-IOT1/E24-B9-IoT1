@@ -119,6 +119,10 @@ def batt_percentage():
     batt_percentage=((voltage-3)/(4.2-3.0))*100 # Return is %-based
     return batt_percentage
 
+def batt_life():
+    current=ina.get_current()
+    return (3600*batt_percentage())/current
+
 def display(col, lin, text):
     """ Insert column, line and text for what to display on LCD."""
     if isinstance(text,str):
