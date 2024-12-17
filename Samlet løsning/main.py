@@ -38,7 +38,7 @@ client.connect() # Connecting to ThingsBoard
 while True:
     try:
         if ticks_ms() > id1 + id1timing:
-            id2 = ticks_ms()
+            id1 = ticks_ms()
             ID1_main.run()
         if ticks_ms() > id2 + id2timing:
             id2 = ticks_ms() # Resetter nonblocking delay timer
