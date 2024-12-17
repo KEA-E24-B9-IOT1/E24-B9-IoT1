@@ -390,7 +390,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Y3SbSDRsjc7YrGWo-Guc" name="ID 8">
-    <mxGraphModel dx="-114" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="327" dy="576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -442,7 +442,7 @@
         <mxCell id="YzuZSetJnG-eHo4UwxbQ-13" value="&lt;div&gt;Hent data fra API&lt;/div&gt;&lt;div&gt;ang. CO2-belastning&lt;/div&gt;&lt;div&gt;af strømproduktion&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="1116" y="170" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="DBEKjqC4MuL__OdjnAaQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YzuZSetJnG-eHo4UwxbQ-15" target="YzuZSetJnG-eHo4UwxbQ-13" edge="1">
+        <mxCell id="DBEKjqC4MuL__OdjnAaQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YzuZSetJnG-eHo4UwxbQ-15" target="YzuZSetJnG-eHo4UwxbQ-13">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1470" y="540" />
