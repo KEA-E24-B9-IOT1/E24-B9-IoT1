@@ -48,7 +48,6 @@ lcd_num_columns = 20
 gps_baudrate = 9600 # u-block default
 gps_port = 2 # Don't change
 
-
 ##### OBJECTS
 gps=GPS_SIMPLE(UART(gps_port,gps_baudrate)) # 5V
 lcd=GpioLcd(rs_pin=Pin(pin_lcd_rs),
@@ -66,18 +65,21 @@ dht11=dht.DHT11(Pin(pin_dht11)) # 3.3V
 
 # buzzer_PWM_objekt=PWM(Pin(pin_buzzer,Pin.OUT),freq=1,duty=0) # 3.3V?
 
-# imu=MPU6050(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
+mpu=MPU6050(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
 
-neoring=NeoPixel(Pin(pin_neoring,Pin.OUT),15)
+neoring=NeoPixel(Pin(pin_neoring,Pin.OUT),12) #Neopixel ring
 
-# left_blinker=NeoPixel(Pin(pin_neostrip_one,Pin.OUT),3) # Error: Pin can only be input
+lb=NeoPixel(Pin(pin_neoring,Pin.OUT),0)       #Venstre blinklys
+
+rb=NeoPixel(Pin(pin_neoring,Pin.OUT),4)       #Højre blinklys
+
+# left_blinker=NeoPixel(Pin(pin_neostrip_one,Pin.OUT),3) # Error: Pin can only be input Fjern??
 
 left_button=Pin(pin_button_one,Pin.IN)
 
-# right_blinker=NeoPixel(Pin(pin_neostrip_two,Pin.OUT),3) # Error: Pin can only be input
+# right_blinker=NeoPixel(Pin(pin_neostrip_two,Pin.OUT),3) # Error: Pin can only be input Fjern??
 
 right_button=Pin(pin_button_two,Pin.IN)
-
 
 ##### FUNCTIONS
 def handler_alarm(req_id,method,params):
@@ -133,41 +135,45 @@ def display(col, lin, text):
         lcd.move_to(0,1)
         lcd.putstr("Make input string")
 
-def neopixel_clear():
+def neopixel_clear(neopixel):
     """Turn off neopixel lights"""
-    for i in range(n):
-        np[i]=(0,0,0)
-    np.write()
+    for i in range(12):
+        neopixel[i]=(0,0,0)
+    neopixel.write()
 
-def neopixel_flash(r,g,b):
+def neopixel_flash(r,g,b, neopixel = neoring):
     """Enable flashy lights"""
-    for i in range (n):
-        np[i]=(r,g,b)
-    np.write()
+    for i in range (12):
+        neopixel[i]=(r,g,b)
+    neopixel.write()
 
 def disable_active_alarm():
     """Disable sound and lights"""
     neopixel_clear()
     buzzer_PWM_objekt.duty(0)
 
-def trigger_alarm(r,g,b):
+def trigger_alarm(r,g,b,): #neoring, lb, rb
     """Trigger flashy lights and annoying sounds"""
-    neopixel_flash(r,g,b)
+    neopixel_flash(r,g,b, neoring)
+    neopixel_flash(r,g,b, lb)
+    neopixel_flash(r,g,b, rb)
     buzzer_PWM_objekt.freq(1023)
     buzzer_PWM_objekt.duty(512)
     # A delay - blocking or non-blocking??
-    neopixel_flash(b,g,r)
+    neopixel_flash(b,g,r, neoring)
+    neopixel_flash(r,g,b, lb)
+    neopixel_flash(r,g,b, rb)
     buzzer_PWM_objekt.freq(512)
     # A delay - blocking or non-blocking?
 
 def blinker():
     """Function to make a signal light blink"""
-    blinker_ticker=ticks_ms()
+    blinker_ticker=ticks_ms(neopixel)
     if ticks_ms()-blinker_ticker>100:
         for i in range(3):
-            np[i]=(0,50,50)
-        np.write()
+            neopixel[i]=(0,50,50)
+        neopixel.write()
         for i in range(3):
-            np[i]=(0,0,0)
-        np.write()
+            neopixel[i]=(0,0,0)
+        neopixel.write()
         blinker_ticker=ticks_ms()
