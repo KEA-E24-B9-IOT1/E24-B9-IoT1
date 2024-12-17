@@ -5,11 +5,6 @@ from time import sleep
 from machine import reset
 import backend as hw #Omdøbt
 
-
-##### OBJECTS
-dht11=hw.dht11
-lcd=hw.lcd
-
 # Variabels
 printable=None
 

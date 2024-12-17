@@ -8,6 +8,7 @@ Der er også tilhørende configs og funktioner.
 ##### IMPORTS
 import dht
 
+from uthingsboard.client import TBDeviceMqttClient
 from machine import Pin, UART, I2C, PWM
 from gpio_lcd import GpioLcd
 from ina219_lib import INA219
