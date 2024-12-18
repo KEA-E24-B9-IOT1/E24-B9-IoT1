@@ -48,8 +48,6 @@ lcd_num_lines = 4
 lcd_num_columns = 20
 gps_baudrate = 9600 # u-block default
 gps_port = 2 # Don't change
-n_long = 12
-n_short = 3
 
 ##### OBJECTS
 gps=GPS_SIMPLE(UART(gps_port,gps_baudrate)) # 5V
@@ -66,7 +64,7 @@ ina=INA219(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
 
 dht11=dht.DHT11(Pin(pin_dht11)) # 3.3V
 
-# buzzer_PWM_objekt=PWM(Pin(pin_buzzer,Pin.OUT),freq=1,duty=0) # 3.3V?
+buzzer_PWM_objekt=PWM(Pin(pin_buzzer,Pin.OUT),freq=1,duty=0) # 3.3V?
 
 mpu=MPU6050(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
 
@@ -141,21 +139,23 @@ def display(col, lin, text):
         lcd.move_to(0,1)
         lcd.putstr("Make input string")
 
-def color_long(np,r,g,b):
+def color_long(r,g,b):
     """Turn off neopixel lights"""
-    for i in range(n_long):
-        np[i]=(r,g,b)
-    np.write()
+    for i in range(12):
+        neoring[i]=(r,g,b)
+    neoring.write()
 
 def color_short(np,r,g,b):
-    for i in range(n_short):
+    for i in range(3):
         np[i]=(r,g,b)
     np.write()
 
 
 def disable_active_alarm():
     """Disable sound and lights"""
-    neopixel_clear()
+    color_long(0,0,0)
+    backend.color_short(rb,0,0,0)
+    backend.color_short(rb,0,0,0)
     buzzer_PWM_objekt.duty(0)
 
 def trigger_alarm(r,g,b,): #neoring, lb, rb
