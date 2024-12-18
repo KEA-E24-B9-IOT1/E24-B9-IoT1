@@ -16,11 +16,13 @@ def ina_current_average():
     if len(average_current)>36:
         del average_current[0]
     avg_current=sum(average_current)/len(average_current)
+    print(f"Avg current: {avg_current}")
     return avg_current
 
 def est_batt_life():
     battery_percentage=backend.batt_percentage()
     battlife=3600*(backend.batt_percentage()/100)/ina_current_average()
     telemetry = {'Battlife' : battlife}
+    print(f"Est. batt life: {battlife}")
     return telemetry
     

@@ -19,8 +19,8 @@ from time import ticks_ms
 
 
 ##### PINS
-pin_button_left = 39
-pin_button_right = 36
+pin_button_left = 36
+pin_button_right = 39
 pin_gps_pps = 5 # Don't change
 pin_solenoid = 15
 pin_gps_tx = 16 # Don't change

@@ -9,4 +9,5 @@ import backend
 
 # FUNCTIONS
 def run():
-    backend.display(0, 0, f"Bat%:{int(hw.batt_percentage())}")
+    print("Display battery percentage")
+    backend.display(0, 0, f"Bat%:{int(backend.batt_percentage())}")
