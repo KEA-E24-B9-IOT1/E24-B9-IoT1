@@ -1,64 +1,44 @@
 """
-Krav:
-Når cyklen har stået stille i mere end 3 minutter,
-og brugeren ikke har slukket permanent for løsningen,
-sendes beskeder med cyklens placering til Thingsboard,
-hvis cyklen kommer i bevægelse
-
-Accepttest:
-- Batteri skal være fuldt opladet
-- Løsningen tændes
-- En kort tur på 1 minut køres
-- Cyklen stilles, men løsningen slukkes ikke, og tiden nulstilles
-- Når der ikke er registreret bevægelse på cyklen i 3 minutter fra 3)
-skal der inden for 30 sekunder komme en besked på Thingsboard hvis cyklen kommer i bevægelse,
-og positionen sendes hvert tiende sekund til Thingsboard. Sker dette er kravet opfyldt.
+Når cyklen har stået stille i mere end 3 minutter, og brugeren ikke har slukket permanent for løsningen, sendes beskeder med cyklens placering til Thingsboard, hvis cyklen kommer i bevægelse
 """
 
 ##### IMPORTS
-from uthingsboard.client import TBDeviceMqttClient
-from time import ticks_ms, sleep
-from machine import reset, UART, Pin
 import gc
 import backend
-import secrets
-from sys import exit
 
 
 ##### VARIABLES AND CONSTANTS
-gps_loc=None
-gps_list=[]
-AlarmSystemEnabled=False
+gps_loc=[] # For saving locations
+gps_loc_list=[] # For saving locations
 
-##### OBJECTS
-gps = backend.gps
 
-gps_loc_list=[]
-
-##### PROGRAM
+##### Functions
 def is_moving():
-    if gc.mem_free() < 2000:
-        gc.collect()
-    if gps.receive_nmea_data() and gps.get_validity()=="A":
-        print("Bike is moving")
-        gps_loc={"Latitude":gps.get_latitude(),
-                 "Longitude":gps.get_longitude()}
-        gps_list.append(gps_loc)
-        if len(gps_loc_list)>180:
-            del gps_loc_list[0]
-        AlarmSystemEnabled=False
+    """See if the bike is moving"""
+    backend.gps.receive_nmea_data() # Fetch gps data
+    if gc.mem_free() < 2000: # Clear memory if less than 2000
+        gc.collect() # Clear memory
+    if backend.gps.receive_nmea_data() and backend.gps.get_validity()=="A": # Check if there's data and if it's valid
+        print("Bike gps") # For troubleshooting
+        gps_loc={"Latitude":backend.gps.get_latitude(),
+                 "Longitude":backend.gps.get_longitude()} # Save data
+        gps_loc_list.append(gps_loc) # Append to a list
+        if len(gps_loc_list)>180: # Keep a max of 180 items in the list
+            del gps_loc_list[0] # Delete oldest entry
 
 
 def alarm():
-    print("Alarmsystem check")
-    if gc.mem_free() < 2000:
-        gc.collect()
-    if any(dictionary['Latitude']==gps.get_latitude() for dictionary in gps_loc_list) and any(['Longitude']==gps.get_longitude() for dictionary in gps_loc_list):
-            print("Enabling alarm system")
-            AlarmSystemEnabled=True
+    """Check if the bike has been stationary, in which case the alarm should be enabled"""
+    print("Alarmsystem check") # For troubleshooting
+    if gc.mem_free() < 2000: # Clear memory if less than 2000
+        gc.collect() # Clear memory
+    if any(dictvalue1['Latitude']==backend.gps.get_latitude() for dictvalue1 in gps_loc_list) and any(dictvalue2['Longitude']==backend.gps.get_longitude() for dictvalue2 in gps_loc_list): # See if current gps location is in the list of 180 entries, in which case the alarm should be enabled
+            print("Enabling alarm system") # For troubleshooting
+            return True # Return bool to main.py for the trigger_TB_alarm function
 
 
 def trigger_TB_alarm():
-    print("TB alarm triggered")
-    telemetry={"Latitude":gps.get_latitude(),"Longitude":gps.get_longitude()}
-    return telemetry
+    """If alarm is enabled and the bike is moved, send data to Thingsboard"""
+    print("TB alarm triggered") # For troubleshooting
+    telemetry={"Latitude":backend.gps.get_latitude(),"Longitude":backend.gps.get_longitude()} # Save gps data
+    return telemetry # Return gps data for upload in main.py

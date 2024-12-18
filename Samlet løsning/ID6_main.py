@@ -1,21 +1,17 @@
-from machine import Pin
-from neopixel import NeoPixel
+"""
+Bremselys skal lyse når der bremses over en valgfri negativ acceleration
+"""
 import backend
 
-n = 12 #Number of NeoPixels
-neopix = NeoPixel(Pin(2, Pin.OUT), n) #np Object on Pin 16
-
-mpu = backend.mpu #MPU
-
 def run():
-    values = mpu.get_values() #Henter værdier fra MPU
-    if  values["acceleration y"] > 1000: # Tænder for bremselys, hvis over 1000
-        backend.color_long(255,0,0) #Funktion kaldes
-        print("Tænd neopixel ring")
-        return 1000 #return mængden af tid bremselyset skal være tændt. Dette skal inkoporeres i non-blocking delay,
-                    #så denne ikke kalder functionen igen og potentielt slukker for bremselyset
+    """Turn on brake lights if negative acceleration"""
+    values = backend.mpu.get_values() # Fetch values from MPU
+    if  values["acceleration y"] > 1000: # Check if value for y-axis is greater than 1000
+        backend.color_long(255,0,0) # Call function from backend, to manipulate neopixel ring
+        print("Tænd neopixel ring") # For troubleshooting
+        return 1000 # Return amount of time the light has to be on. Must be incorporated into the non-blocking delay so it doesn't wrongfully get called again.
     else:
-        backend.color_long(0,0,0)   #Funktion kaldes
-        print("Sluk neopixel ring")
-        return 0
+        backend.color_long(0,0,0)   # Same function as above, but to turn off neopixels
+        print("Sluk neopixel ring") # For troubleshooting
+        return 0 # No delay
         
