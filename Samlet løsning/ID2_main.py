@@ -1,10 +1,7 @@
 ##### IMPORTS
 import gc
 
-from time import sleep
-from machine import reset
 import backend
-
 
 ##### PROGRAM
 def run():    
