@@ -39,7 +39,7 @@ def right_blinker_func():
     counter=1
     while True:
         if counter == 1 or counter == 3 or counter == 5:
-            backend.color_short(backend.rb,200,75,0)
+            backend.color_short(backend.rb,250,75,0)
             if ticks_ms()-timer>500:
                 timer=ticks_ms()
                 counter += 1
