@@ -16,8 +16,6 @@ leftcounter = 0
 
 global rightcounter
 rightcounter = 0
-def id11_start():
-    pass
 global timer
 timer = 0
 

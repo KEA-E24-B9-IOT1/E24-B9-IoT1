@@ -46,7 +46,6 @@ client.connect() # Connecting to ThingsBoard
 print("Connecting") # For troubleshooting
 ID4AlarmSystem = False # For ID 4 alarm system
 ID9AlarmSystem = False # For ID 9 alarm system
-ID11_main.id11_start()
 
 def handler(req_id, method, params):
     """ Handler callback to receive RPC from server"""
