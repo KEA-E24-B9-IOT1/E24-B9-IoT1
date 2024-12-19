@@ -10,7 +10,7 @@ from machine import Pin
 threshold_update = 15*60*1000 # 15 min til millisekunder
 starttime_update = ticks_ms() - threshold_update # Så starter functionen med at hente data, fremfor at vente
 # Pin Config
-relay = Pin(15, Pin.OUT)
+relay = Pin(15, Pin.OUT) # Grøn LED er i kredsløb med relæ, og tænder med relæet
 blue = Pin(32, Pin.OUT)
 # Opstart
 relay.value(0)   # Slukker for relæ

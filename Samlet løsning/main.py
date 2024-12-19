@@ -42,10 +42,12 @@ client.connect() # Connecting to ThingsBoard
 print("Connecting") # For troubleshooting
 ID4AlarmSystem = False # For ID 4 alarm system
 ID9AlarmSystem = False # For ID 9 alarm system
+Solenoid_Toggle = False # Solenoid active/inactive state
 
 
-def handler(req_id, method, params):
-    """ Handler callback to receive RPC from server"""
+##### Functions
+def alarm_handler(req_id, method, params):
+    """Handler callback to receive RPC from server"""
     print(f"Response: {req_id}: {method}, params {params}")
     print(params, "params type:", type(params))
     try:
@@ -60,24 +62,33 @@ def handler(req_id, method, params):
     except TypeError as e:
         print(e)
 
+def solenoid_handler(req_id, method, params):
+    """Handler callback to receive RPC from server"""
+    print(f"Response: {req_id}: {method}, params {params}")
+    print(params, "params type:", type(params))
+    try:
+#         global Solenoid_Toggle
+        if method == "Solenoid state":
+            if params == True:
+                print("Solenoid enabled")
+#                 Solenoid_Toggle = True
+                backend.solenoid.value(1)
+            elif params == False:
+                print("Solenoid disabled")
+#                 Solenoid_Toggle = False
+                backend.solenoid.value(0)
+    except TypeError as e:
+        print(e)
+
+
+client.set_server_side_rpc_request_handler(alarm_handler) # Thingsboard-Alarm connection
+client.set_server_side_rpc_request_handler(solenoid_handler) # Thingsboard-Solenoid connection
+
 
 ##### Main Program
 while True:
     try:
-        client.set_server_side_rpc_request_handler(handler) # Keep checking for messages from ThingsBoard
         client.check_msg() # As above
-
-
-        """Following section is currently not working"""
-        if backend.left_button.value()==1 and backend.right_button.value()==1: # If both buttons are held down at the same time
-            print("Solenoid activated") # For troubleshooting
-            backend.solenoid.on() # Turn on solenoid to allow un-/locking
-            solenoid_timer=ticks_ms() # To make sure solenoid allows manipulation for 10 seconds
-            if ticks_ms()-solenoid_timer>10000: # Count-down to disable solenoid
-                solenoid.off() # Disable
-        """"""
-
-
         if ticks_ms() > id1 + id1timing: 
             print("ID 1 running") # For troubleshooting
             id1 = ticks_ms() # Reset non-blocking delay
@@ -97,11 +108,11 @@ while True:
                 id4moving = ticks_ms()
                 ID4_main.is_moving()
         if ticks_ms() > id4alarm + id4alarmtiming:
-            if ID4AlarmSystem==False: # Only run following indentation if alarm isn't armed
+            if ID4AlarmSystem==True: # Only run following indentation if alarm isn't armed
                 print("ID 4 alarm running") # Cykel stået stille i 3 min, aktiver alarm
                 id4alarm = ticks_ms()
                 ID4AlarmSystem=ID4_main.alarm()
-        if ID4AlarmSystem == True: # Only run following indentation is alarm is armed
+        if ID4AlarmSystem == True: # Only run following indentation if alarm is armed
             values=ID6_main.mpu.get_values() # Fetch values
             if values["acceleration y"] > 5000 or values["acceleration x"] > 5000: # Execute following indentation if bike is moved horizontally
                 print("ID 4 alarm triggered, sending gps data to Thingsboard") # For troubleshooting
