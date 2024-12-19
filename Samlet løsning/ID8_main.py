@@ -9,24 +9,13 @@ from machine import Pin
 #Nonblocking delay config
 threshold_update = 15*60*1000 # 15 min til millisekunder
 starttime_update = ticks_ms() - threshold_update # Så starter functionen med at hente data, fremfor at vente
-
-#Pin Config
+# Pin Config
 relay = Pin(15, Pin.OUT)
 blue = Pin(32, Pin.OUT)
-#Opstart
+# Opstart
 relay.value(0)   # Slukker for relæ
 blue.value(1)    # Tænder for blåt lys, og indikere at der ikke er forbindelse eller grøn strøm
-'''
-# Simulering af skiftene grøn strøm
-sim = 55
-def simulering():
-    global sim
-    if sim == 55:
-        sim = 45
-    else:
-        sim = 55
-    return sim
-'''
+# Funktioner
 def fetch_green_power(): # Funktion der henter information fra API
     response = requests.get(
         url = "https://api.energidataservice.dk/dataset/CO2Emis?limit=2")
@@ -36,15 +25,14 @@ def fetch_green_power(): # Funktion der henter information fra API
         return 0
     #co2emis = simulering()
     return co2emis
-
 def led_green_power(): # Funktion der tænder når der er grøn strøm
     relay.value(1) # Tænder for relæ, så opladning startes
     blue.value(0)  # Slukker for blåt lys
 def led_no_green_power(): # Funktion der tænder når der IKKE er grøn strøm
     relay.value(0) # Slukker for relæ, så opladning stoppes
     blue.value(1)  # Tænder for blåt lys
-
-while True: # Program
+# Program
+while True:
     if ticks_ms() > threshold_update + starttime_update: # Nonblocking delay
         starttime_update = ticks_ms()
         print("Fetching data")
