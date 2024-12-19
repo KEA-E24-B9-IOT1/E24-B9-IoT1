@@ -58,6 +58,9 @@ def handler(req_id, method, params):
             if params == True:
                 print("Alarm enabled")
                 ID9AlarmSystem = True
+                backend.solenoid.value(1)
+                sleep(0.5)
+                backend.solenoid.value(0)
             elif params == False:
                 print("Alarm disabled")
                 ID9AlarmSystem = False
@@ -70,15 +73,6 @@ while True:
     try:
         client.set_server_side_rpc_request_handler(handler) # Keep checking for messages from ThingsBoard
         client.check_msg() # As above
-
-
-        """Following section is currently not working"""
-        '''if backend.left_button.value()==1 and backend.right_button.value()==1: # If both buttons are held down at the same time
-            print("Solenoid activated") # For troubleshooting
-            backend.solenoid.on() # Turn on solenoid to allow un-/locking
-            solenoid_timer=ticks_ms() # To make sure solenoid allows manipulation for 10 seconds
-            if ticks_ms()-solenoid_timer>10000: # Count-down to disable solenoid
-                solenoid.off() # Disable'''
 
         if ticks_ms() > id1 + id1timing: 
             #print("ID 1 running") # For troubleshooting
@@ -150,4 +144,3 @@ while True:
     except KeyboardInterrupt:
         client.disconnect() # Disconnecting from ThingsBoard
         reset() # Reset ESP
-
