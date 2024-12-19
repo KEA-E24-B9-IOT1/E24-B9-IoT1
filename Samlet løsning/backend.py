@@ -22,7 +22,7 @@ from time import ticks_ms
 pin_button_left = 36
 pin_button_right = 39
 pin_gps_pps = 5 # Don't change
-pin_solenoid = 15
+pin_solenoid = 15 # Brugt??
 pin_gps_tx = 16 # Don't change
 pin_gps_rx = 17 # Don't change
 pin_scl = 18 # I2C
@@ -48,8 +48,6 @@ lcd_num_lines = 4
 lcd_num_columns = 20
 gps_baudrate = 9600 # u-block default
 gps_port = 2 # Don't change
-n_long = 12
-n_short = 3
 
 ##### OBJECTS
 gps=GPS_SIMPLE(UART(gps_port,gps_baudrate)) # 5V
@@ -62,46 +60,27 @@ lcd=GpioLcd(rs_pin=Pin(pin_lcd_rs),
             num_lines=lcd_num_lines,
             num_columns=lcd_num_columns) # 3.3V
 
+solenoid = Pin(pin_solenoid,Pin.OUT) # Instantiation of Solenoid
+
 ina=INA219(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
 
 dht11=dht.DHT11(Pin(pin_dht11)) # 3.3V
 
-# buzzer_PWM_objekt=PWM(Pin(pin_buzzer,Pin.OUT),freq=1,duty=0) # 3.3V?
+buzzer_PWM_objekt=PWM(Pin(pin_buzzer,Pin.OUT),freq=1,duty=0) # 3.3V?
 
 mpu=MPU6050(I2C(scl=Pin(pin_scl),sda=Pin(pin_sda),freq=400000)) # 3.3V
 
 neoring=NeoPixel(Pin(pin_neoring,Pin.OUT),12) #Neopixel ring
 
-lb=NeoPixel(Pin(pin_neostrip_left,Pin.OUT),3) #Venstre blinklys
+lb=NeoPixel(Pin(pin_neostrip_left,Pin.OUT),3) # Left signal light
 
-rb=NeoPixel(Pin(pin_neostrip_right,Pin.OUT),3) #Højre blinklys
+rb=NeoPixel(Pin(pin_neostrip_right,Pin.OUT),3) # Right signal light
 
-# left_blinker=NeoPixel(Pin(pin_neostrip_one,Pin.OUT),3) # Error: Pin can only be input Fjern??
+left_button=Pin(pin_button_left,Pin.IN) # Instantiation of left button
 
-left_button=Pin(pin_button_left,Pin.IN)
-
-# right_blinker=NeoPixel(Pin(pin_neostrip_two,Pin.OUT),3) # Error: Pin can only be input Fjern??
-
-right_button=Pin(pin_button_right,Pin.IN)
+right_button=Pin(pin_button_right,Pin.IN) # Instantiation of right button
 
 ##### FUNCTIONS
-def handler_alarm(req_id,method,params):
-    """Handler callback to receive RPC from server, to enable or disable alarm"""
-    print(f"Response: {req_id}: {method}, params {params}")
-    print(params, "params type:", type(params))
-    try:
-        if method=="Enable alarm":
-            if params==True:
-                print("Alarm enabled")
-                alarm_enabled=True
-            elif params==False:
-                print("Alarm disabled")
-                alarm_enabled=False
-        if method=="secondCommand":
-            print(params.get("command"))
-    except TypeError as e:
-        print(e)
-
 def dht11_temp():
     """Measure with dht11, return temp in °C"""
     dht11.measure()
@@ -117,13 +96,10 @@ def ina_current():
     return ina.get_current()
 
 def batt_percentage():
-    """Return battery-%, 4.2V is cons. 100%, and 3.0V is considered 0%."""
+    """Return battery-%, 8.4V is considered 100%, and 6.0V is considered 0%."""
     batt_percentage=((ina_voltage()-6)/(8.4-6.0))*100 # Return is %-based
     return batt_percentage
 
-def batt_life():
-    current=ina.get_current()
-    return (3600*batt_percentage())/current
 
 def display(col, lin, text):
     """ Insert column, line and text for what to display on LCD."""
@@ -141,45 +117,14 @@ def display(col, lin, text):
         lcd.move_to(0,1)
         lcd.putstr("Make input string")
 
-def color_long(np,r,g,b):
-    """Turn off neopixel lights"""
-    for i in range(n_long):
-        np[i]=(r,g,b)
-    np.write()
+def color_long(r,g,b):
+    """Manipulate neopixel ring, insert values from 0 to 255"""
+    for i in range(12):
+        neoring[i]=(r,g,b)
+    neoring.write()
 
 def color_short(np,r,g,b):
-    for i in range(n_short):
+    """Manipulate neopixel strips, insert values from 0 to 255"""
+    for i in range(3):
         np[i]=(r,g,b)
     np.write()
-
-
-def disable_active_alarm():
-    """Disable sound and lights"""
-    neopixel_clear()
-    buzzer_PWM_objekt.duty(0)
-
-def trigger_alarm(r,g,b,): #neoring, lb, rb
-    """Trigger flashy lights and annoying sounds"""
-    neopixel_flash(neoring,12,r,g,b)
-    neopixel_flash(lb,3,r,g,b)
-    neopixel_flash(rb,3,r,g,b)
-    buzzer_PWM_objekt.freq(1023)
-    buzzer_PWM_objekt.duty(512)
-    # A delay - blocking or non-blocking??
-    neopixel_flash(neoring,12,r,g,b)
-    neopixel_flash(lb,3,r,g,b)
-    neopixel_flash(rb,3,r,g,b)
-    buzzer_PWM_objekt.freq(512)
-    # A delay - blocking or non-blocking?
-
-def blinker(n):
-    """Function to make a signal light blink"""
-    blinker_ticker=ticks_ms(neopixel)
-    if ticks_ms()-blinker_ticker>100:
-        for i in range(n):
-            neopixel[i]=(0,50,50)
-        neopixel.write()
-        for i in range(n):
-            neopixel[i]=(0,0,0)
-        neopixel.write()
-        blinker_ticker=ticks_ms()

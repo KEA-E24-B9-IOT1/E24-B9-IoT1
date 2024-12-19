@@ -6,8 +6,7 @@ Samtidig skal batteristatus, resterende kapacitet i procent, vises.
 """
 import backend
 
-
-# FUNCTIONS
 def run():
-    print("Display battery percentage")
-    backend.display(0, 0, f"Bat%:{int(backend.batt_percentage())}")
+    """Show batt% on LCD"""
+    print("Display battery percentage") # For troubleshooting
+    backend.display(0, 0, f"Bat%:{int(backend.batt_percentage())}") # Calculate and display on LCD
