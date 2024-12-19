@@ -23,7 +23,6 @@ id6 = ticks_ms()
 id7 = ticks_ms()
 id11 = ticks_ms()
 id11_2 = ticks_ms()
-ged = ticks_ms()
 
 
 ##### Non Blocking Delay timing #####
@@ -37,7 +36,6 @@ id6timing = 500 # How often to check if ID 6 should be executed
 id7timing = 300000 # How often to execute ID 7 for estimated battery life
 id11timing = 100 # How often to update blinker Blinker
 id11timing2 = 1000 # How often to block buttons
-gedtiming = 1000
 
 
 ##### Startup configs
@@ -149,12 +147,6 @@ while True:
                 
         if ticks_ms() > id11 + id11timing:
             ID11_main.blinker()
-        if ticks_ms() > ged + gedtiming:
-            ged = ticks_ms()
-            gennemsnit = 0
-            for x in range(20):
-                gennemsnit += backend.ina_current()
-            print("mA: ", gennemsnit/20)
     except KeyboardInterrupt:
         client.disconnect() # Disconnecting from ThingsBoard
         reset() # Reset ESP
