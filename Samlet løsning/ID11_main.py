@@ -27,7 +27,7 @@ def blinker():
         if leftcounter > 0:
             if leftcounter % 2 == 0: # True if Even, hvis der ikke er nogen rest efter modulo, så er tallet lige
                 backend.color_short(backend.lb,250,75,0) # Call backend-function to manipulate light
-            if leftcounter % 2 != 0: # False if Even, hvis der ikke er nogen rest efter modulo, så er tallet lige
+            if leftcounter % 2 != 0: # False if Even, hvis der er en rest efter modulo, så er tallet ulige
                 backend.color_short(backend.lb,0,0,0) # Call backend-function to manipulate light
             print("ID11 leftcounter : ", leftcounter)
             leftcounter -= 1
