@@ -21,7 +21,7 @@ timer = 0
 
 def blinker():
     global timer
-    if ticks_ms() > timer + 500:
+    if ticks_ms() > timer + 450:
         global leftcounter
         global rightcounter
         if leftcounter > 0:
