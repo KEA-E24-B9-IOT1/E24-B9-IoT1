@@ -21,10 +21,10 @@ from time import ticks_ms
 ##### PINS
 pin_button_left = 36
 pin_button_right = 39
-pin_gps_pps = 5 # Don't change
+PIN_GPS_PPS = 5 # Don't change
 pin_solenoid = 15
-pin_gps_tx = 16 # Don't change
-pin_gps_rx = 17 # Don't change
+PIN_GPS_TX = 16 # Don't change
+PIN_GPS_RX = 17 # Don't change
 pin_scl = 18 # I2C
 pin_sda = 19 # I2C
 pin_lcd_db6 = 21 # Don't change
@@ -44,21 +44,22 @@ pin_ina = None # connect via sda and scl
 
 
 ##### CONFIGURATIONS
-lcd_num_lines = 4
-lcd_num_columns = 20
-gps_baudrate = 9600 # u-block default
-gps_port = 2 # Don't change
+LCD_NUM_LINES = 4
+LCD_NUM_COLUMNS = 20
+GPS_BAUDRATE = 9600 # u-block default
+GPS_PORT = 2 # Don't change
+
 
 ##### OBJECTS
-gps=GPS_SIMPLE(UART(gps_port,gps_baudrate)) # 5V
+gps=GPS_SIMPLE(UART(GPS_PORT,GPS_BAUDRATE)) # 5V
 lcd=GpioLcd(rs_pin=Pin(pin_lcd_rs),
             enable_pin=Pin(pin_lcd_enable),
             d4_pin=Pin(pin_lcd_db4),
             d5_pin=Pin(pin_lcd_db5),
             d6_pin=Pin(pin_lcd_db6),
             d7_pin=Pin(pin_lcd_db7),
-            num_lines=lcd_num_lines,
-            num_columns=lcd_num_columns) # 3.3V
+            num_lines=LCD_NUM_LINES,
+            num_columns=LCD_NUM_COLUMNS) # 3.3V
 
 solenoid = Pin(pin_solenoid,Pin.OUT)
 
@@ -76,13 +77,10 @@ lb=NeoPixel(Pin(pin_neostrip_left,Pin.OUT),3) #Venstre blinklys
 
 rb=NeoPixel(Pin(pin_neostrip_right,Pin.OUT),3) #Højre blinklys
 
-# left_blinker=NeoPixel(Pin(pin_neostrip_one,Pin.OUT),3) # Error: Pin can only be input Fjern??
-
 left_button=Pin(pin_button_left,Pin.IN)
 
-# right_blinker=NeoPixel(Pin(pin_neostrip_two,Pin.OUT),3) # Error: Pin can only be input Fjern??
-
 right_button=Pin(pin_button_right,Pin.IN)
+
 
 ##### FUNCTIONS
 def handler_alarm(req_id,method,params):
@@ -160,6 +158,7 @@ def disable_active_alarm():
     backend.color_short(rb,0,0,0)
     buzzer_PWM_objekt.duty(0)
 
+
 def trigger_alarm(r,g,b,): #neoring, lb, rb
     """Trigger flashy lights and annoying sounds"""
     neopixel_flash(neoring,12,r,g,b)
@@ -173,6 +172,7 @@ def trigger_alarm(r,g,b,): #neoring, lb, rb
     neopixel_flash(rb,3,r,g,b)
     buzzer_PWM_objekt.freq(512)
     # A delay - blocking or non-blocking?
+
 
 def blinker(n):
     """Function to make a signal light blink"""
