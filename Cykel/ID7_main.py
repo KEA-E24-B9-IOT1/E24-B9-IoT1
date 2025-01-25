@@ -1,11 +1,6 @@
 import backend
 
-
-ina=backend.ina
-
-
 average_current=[]
-
 
 def ina_current_average():
     average_current.append(backend.ina_current())

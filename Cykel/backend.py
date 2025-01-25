@@ -8,14 +8,12 @@ Der er også tilhørende configs og funktioner.
 ##### IMPORTS
 import dht
 
-from uthingsboard.client import TBDeviceMqttClient
 from machine import Pin, UART, I2C, PWM
 from gpio_lcd import GpioLcd
 from ina219_lib import INA219
 from gps_simple import GPS_SIMPLE
 from mpu6050 import MPU6050
 from neopixel import NeoPixel
-from time import ticks_ms
 
 
 ##### PINS
@@ -83,23 +81,6 @@ right_button=Pin(pin_button_right,Pin.IN)
 
 
 ##### FUNCTIONS
-def handler_alarm(req_id,method,params):
-    """Handler callback to receive RPC from server, to enable or disable alarm"""
-    print(f"Response: {req_id}: {method}, params {params}")
-    print(params, "params type:", type(params))
-    try:
-        if method=="Enable alarm":
-            if params==True:
-                print("Alarm enabled")
-                alarm_enabled=True
-            elif params==False:
-                print("Alarm disabled")
-                alarm_enabled=False
-        if method=="secondCommand":
-            print(params.get("command"))
-    except TypeError as e:
-        print(e)
-
 def dht11_temp():
     """Measure with dht11, return temp in °C"""
     dht11.measure()
@@ -118,10 +99,6 @@ def batt_percentage():
     """Return battery-%, 4.2V is cons. 100%, and 3.0V is considered 0%."""
     batt_percentage=((ina_voltage()-6)/(8.4-6.0))*100 # Return is %-based
     return batt_percentage
-
-def batt_life():
-    current=ina.get_current()
-    return (3600*batt_percentage())/current
 
 def display(col, lin, text):
     """ Insert column, line and text for what to display on LCD."""
@@ -149,39 +126,3 @@ def color_short(np,r,g,b):
     for i in range(3):
         np[i]=(r,g,b)
     np.write()
-
-
-def disable_active_alarm():
-    """Disable sound and lights"""
-    color_long(0,0,0)
-    backend.color_short(rb,0,0,0)
-    backend.color_short(rb,0,0,0)
-    buzzer_PWM_objekt.duty(0)
-
-
-def trigger_alarm(r,g,b,): #neoring, lb, rb
-    """Trigger flashy lights and annoying sounds"""
-    neopixel_flash(neoring,12,r,g,b)
-    neopixel_flash(lb,3,r,g,b)
-    neopixel_flash(rb,3,r,g,b)
-    buzzer_PWM_objekt.freq(1023)
-    buzzer_PWM_objekt.duty(512)
-    # A delay - blocking or non-blocking??
-    neopixel_flash(neoring,12,r,g,b)
-    neopixel_flash(lb,3,r,g,b)
-    neopixel_flash(rb,3,r,g,b)
-    buzzer_PWM_objekt.freq(512)
-    # A delay - blocking or non-blocking?
-
-
-def blinker(n):
-    """Function to make a signal light blink"""
-    blinker_ticker=ticks_ms(neopixel)
-    if ticks_ms()-blinker_ticker>100:
-        for i in range(n):
-            neopixel[i]=(0,50,50)
-        neopixel.write()
-        for i in range(n):
-            neopixel[i]=(0,0,0)
-        neopixel.write()
-        blinker_ticker=ticks_ms()

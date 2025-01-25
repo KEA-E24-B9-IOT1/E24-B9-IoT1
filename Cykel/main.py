@@ -118,10 +118,6 @@ while True:
                 if backend.left_button.value()==1 and backend.right_button.value()==1:
                     print("Unlocking")
                     backend.solenoid.value(1)
-                    gennemsnit = 0
-                    for x in range(2000):
-                        gennemsnit += backend.ina_current()
-                    print("Solenid mA: ", gennemsnit/2000)
                     print("Locking")
                     backend.solenoid.value(0)
                 elif backend.left_button.value()==1: # Check if left button is manipulated

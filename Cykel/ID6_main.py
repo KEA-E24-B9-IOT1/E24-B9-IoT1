@@ -1,9 +1,4 @@
-from machine import Pin
-from neopixel import NeoPixel
 import backend
-
-n = 12 #Number of NeoPixels
-neopix = NeoPixel(Pin(2, Pin.OUT), n) #np Object on Pin 16
 
 mpu = backend.mpu #MPU
 

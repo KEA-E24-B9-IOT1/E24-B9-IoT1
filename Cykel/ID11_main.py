@@ -8,16 +8,13 @@ import backend
 
 
 backend.color_short(backend.rb,0,0,0) # Start with turning off neopixel lights
-
 backend.color_short(backend.lb,0,0,0) # Start with turning off neopixel lights
 
-global leftcounter
-leftcounter = 0
 
-global rightcounter
+leftcounter = 0
 rightcounter = 0
-global timer
 timer = 0
+
 
 def blinker():
     global timer
